@@ -1,1 +1,153 @@
-"kailaadfilms"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kailaad Films - Content Creation & Promotion Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Kailaad Films Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        
+        <div class="hero-content">
+            <h1>KAILAAD FILMS</h1>
+            <p>Bringing your stories to life through innovative filmmaking</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-button" id="watch-now-btn">Watch Now</a>
+                <a href="#contact" class="cta-button">Hire Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="images/service-icons/short-film.svg" alt="Short Films">
+                <h3>Short Films</h3>
+                <p>Compelling narratives in bite-sized formats</p>
+            </div>
+            <div class="service-card">
+                <img src="images/service-icons/documentary.svg" alt="Documentaries">
+                <h3>Documentaries</h3>
+                <p>In-depth exploration of fascinating subjects</p>
+            </div>
+            <div class="service-card">
+                <img src="images/service-icons/podcast.svg" alt="Podcasts">
+                <h3>Podcasts</h3>
+                <p>Engaging audio content for your audience</p>
+            </div>
+            <div class="service-card">
+                <img src="images/service-icons/vlog.svg" alt="Vlogs">
+                <h3>Vlogs</h3>
+                <p>Personal and authentic video journals</p>
+            </div>
+            <div class="service-card">
+                <img src="images/service-icons/promotion.svg" alt="Promotions">
+                <h3>Promotions</h3>
+                <p>Tailored content to boost your brand</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Dashboard -->
+    <section id="analytics" class="analytics">
+        <h2>Your Journey with Kailaad Films</h2>
+        <div class="journey-container">
+            <div class="journey-step">
+                <i class="fas fa-envelope"></i>
+                <h3>Contact Us</h3>
+                <p>Reach out via form or email.</p>
+            </div>
+            <div class="journey-step">
+                <i class="fas fa-search"></i>
+                <h3>Requirement Analysis</h3>
+                <p>We analyze your needs and goals.</p>
+            </div>
+            <div class="journey-step">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Strategy Development</h3>
+                <p>Receive a tailored strategy and suggestions.</p>
+            </div>
+            <div class="journey-step">
+                <i class="fas fa-camera"></i>
+                <i class="fas fa-bullhorn"></i>
+                <h3>Content Creation/Promotion</h3>
+                <p>We create content and handle promotions.</p>
+            </div>
+            <div class="journey-step">
+                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-trophy"></i>
+                <h3>Results & Benefits</h3>
+                <p>See measurable benefits and results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations" class="recommendations">
+        <h2>Recommended for You</h2>
+        <div id="recommendation-container"></div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security">
+        <h2>Your Content, Securely Managed</h2>
+        <p>We prioritize the security of your content with state-of-the-art encryption and secure collaboration tools.</p>
+        <ul>
+            <li>End-to-end encryption</li>
+            <li>Secure file uploads</li>
+            <li>GDPR compliant</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Work With Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kailaad Films. All rights reserved.</p>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="showreel-video" controls>
+                <source src="videos/showreel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/recommendations.js"></script>
+    <script src="scripts/modal.js"></script>
+</body>
+</html>
